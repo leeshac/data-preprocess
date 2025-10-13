@@ -7,6 +7,7 @@ def replace_missing_with_median(data):
     return data.fillna(median_val)
 
 #function to remove outliers with clipping IQR
+#TODO: clipping can produce floats so may need to round
 def removee_outliers_iqr(data):
     Q1 = data.quantile(0.25) #first quartile
     Q3 = data.quantile(0.75) #third quartile
