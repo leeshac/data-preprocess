@@ -2,6 +2,11 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
+#STEPS:
+#1. replace missing values with mode
+#2. encode the nominal values using label encoding for tree based models and one hot encoding for relation based models
+#3. return the modified dataframe and the mapping dictionary if label encoding is used
+
 #function to replace missing values with mode
 def replace_missing_with_mode(data):
     mode_val = data.mode()[0]

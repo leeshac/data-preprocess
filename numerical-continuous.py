@@ -2,6 +2,13 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
+#STEPS:
+#1. replace missing values with median
+#2. remove outliers with clipping IQR
+#3. transform data with log1p
+#4. scale data with standard scaler
+#5. return the modified dataframe
+
 #function to replace missing values with median
 def replace_missing_with_median(data):
     median_val = data.median()

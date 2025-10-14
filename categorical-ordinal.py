@@ -1,6 +1,11 @@
 import pandas as pd
 import numpy as np
 
+#STEPS:
+#1. replace missing values with mode
+#2. map the ordinal values to numerical values based on a predefined mapping
+#3. return the modified dataframe and the mapping dictionary
+
 #function to replace missing values with mode
 def replace_missing_with_mode(data):
     mode_val = data.mode()[0]
