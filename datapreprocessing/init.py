@@ -1,4 +1,4 @@
-from .datapreprocess import autopreprocessor
+from datapreprocessing.datapreprocess import autopreprocessor
 
 __all__ = ["autopreprocessor"]
 
