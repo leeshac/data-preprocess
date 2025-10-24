@@ -4,11 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "datapreprocessing"
-description = "Automatic preprocessing for tabular data (numerical and categorical), will add"
 version = "0.0.1"
 requires-python = ">=3.11"
 readme = "README.md"
-authors = [
-  {name = "Aleesha Adekoya"},
-]
+authors = [{name = "Aleesha Adekoya"}]
 dependencies = [ "pandas", "numpy", "scikit-learn" ]
